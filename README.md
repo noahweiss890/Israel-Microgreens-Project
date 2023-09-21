@@ -61,7 +61,7 @@ Follow these steps to set up and run the Israel Microgreens API and User Interfa
 
 ## API Endpoints
 
-The Israel Microgreens API provides the following API endpoints:
+The Israel Microgreens API can be accessed at `http://localhost:5000`, and provides the following API endpoints:
 
 1. **Retrieve Microgreens and Prices**
    - **Endpoint:** `/microgreens`
