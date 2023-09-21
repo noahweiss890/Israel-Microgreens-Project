@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microgreens and Customers</title>
+    <style>
+        /* Add border styling to the table */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /* Add a gray background color to even rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Microgreens</h1>
+    <table id="microgreens-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Microgreens data will be displayed here -->
+        </tbody>
+    </table>
+
+    <h1>Customers</h1>
+    <table id="customers-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Total Ordered</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Customers data will be displayed here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to fetch and display Microgreens data
+        fetch("http://127.0.0.1:5000/microgreens")
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById("microgreens-table").getElementsByTagName('tbody')[0];
+                data.forEach(microgreen => {
+                    const row = table.insertRow();
+                    row.insertCell(0).textContent = microgreen[0];
+                    row.insertCell(1).textContent = `${microgreen[1]} ₪`;
+                });
+            });
+
+        // Function to fetch and display Customers data
+        fetch("http://127.0.0.1:5000/customers")
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById("customers-table").getElementsByTagName('tbody')[0];
+                data.forEach(customer => {
+                    const row = table.insertRow();
+                    row.insertCell(0).textContent = customer[0];
+                    row.insertCell(1).textContent = customer[1];
+                    row.insertCell(2).textContent = customer[2];
+                });
+            });
+    </script>
+</body>
+</html>
