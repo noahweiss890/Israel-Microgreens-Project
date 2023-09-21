@@ -44,6 +44,9 @@ def create_orders_table(cursor):
         )
     """)
 
+def use_database(cursor):
+    cursor.execute("USE israelmicrogreens")
+
 # Function to add a new Microgreen entry
 def add_microgreen(name, price):
     try:
@@ -127,6 +130,9 @@ if __name__ == "__main__":
 
         print("Database and tables created successfully!")
 
+        # Switch to the newly created database
+        use_database(cursor)
+
         # Adding Microgreens:
         add_microgreen("Broccoli", 25)
         add_microgreen("Kale", 25)
@@ -162,7 +168,7 @@ if __name__ == "__main__":
 
         add_order(5, 5, 3)
         add_order(5, 6, 1)
-        
+
         add_order(6, 7, 2)
         add_order(6, 8, 1)
 
