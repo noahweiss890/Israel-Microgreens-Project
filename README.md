@@ -35,17 +35,22 @@ Follow these steps to set up and run the Israel Microgreens API and User Interfa
    python3 init_sql_db.py
    ```
 
-5. **Start the Microgreen API:**
+5. **Add Data to the Database:**
+   ```
+   python3 add_data.py
+   ```
+
+6. **Start the Microgreen API:**
    ```
    python3 microgreen_api.py
    ```
 
-6. **Start the Microgreen Node Server:**
+7. **Start the Microgreen Node Server:**
    ```
    cd microgreen_node && npm start
    ```
 
-7. **Open Your Browser and Go to:**
+8. **Open Your Browser and Go to:**
    ```
    http://localhost:3000
    ```
