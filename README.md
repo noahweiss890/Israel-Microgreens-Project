@@ -8,6 +8,7 @@ This is a simple project that creates a RESTful API to interact with a relationa
 - [API Endpoints](#api-endpoints)
 - [Database Architecture](#database-architecture)
 - [User Interface](#user-interface)
+- [Technologies Used](#technologies-used)
 
 ## How to Run
 
