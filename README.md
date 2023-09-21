@@ -70,3 +70,14 @@ The database architecture of this project is designed to be normalized for effic
 ## User Interface
 
 A user interface is created to interact with the Israel Microgreens Database. You can access this interface by opening your web browser and navigating to [http://localhost:3000](http://localhost:3000). The interface allows you to view the data, presenting it in a clear and user-friendly tabular format.
+
+## Technologies Used
+
+This project leverages the following technologies to deliver its functionality:
+
+- **Python:** Used for backend development, database initialization, and API implementation.
+- **Node.js:** Employed for the Microgreen Node Server, enhancing the system's performance and scalability.
+- **MySQL:** A relational database management system utilized for data storage and retrieval.
+- **Docker:** Used to containerize the MySQL database for easy deployment.
+- **HTML/CSS/JavaScript:** These web technologies are employed to create the user interface.
+- **Git:** Version control system for collaborative development and code management.
