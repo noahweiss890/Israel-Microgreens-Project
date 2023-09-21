@@ -1,6 +1,6 @@
 # Israel Microgreens API and User Interface
 
-This is a simple project that creates a RESTful API to interact with a relational database, providing two endpoints: one to retrieve a list of Microgreens and their prices, and the other to retrieve a list of customers and the amount of Microgreens they have ordered. The database tables are normalized, and SQL joins are used to fetch the required data. The API responses are in JSON format. Additionally, a user interface (web or mobile) is created to fetch and display the data in a tabular format.
+This is a simple project that creates a RESTful API to interact with a relational database, providing two endpoints: one to retrieve a list of Microgreens and their prices, and the other to retrieve a list of customers and the amount of Microgreens they have ordered. The database tables are normalized, and SQL joins are used to fetch the required data. The API responses are in JSON format. Additionally, a user interface is created to fetch and display the data in a tabular format.
 
 ## Table of Contents
 - [Project Description](#israel-microgreens-api-and-user-interface)
