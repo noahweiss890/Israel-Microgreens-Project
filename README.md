@@ -10,6 +10,10 @@ This is a simple project that creates a RESTful API to interact with a relationa
 - [User Interface](#user-interface)
 - [Technologies Used](#technologies-used)
 
+## Screenshot
+<img width="930" alt="Screenshot 2023-09-21 at 11 56 52 PM" src="https://github.com/noahweiss890/Israel-Microgreens-Project/assets/93292627/1de316ea-89fa-41c5-b239-a78ee43654bf">
+
+
 ## How to Run
 
 Follow these steps to set up and run the Israel Microgreens API and User Interface:
