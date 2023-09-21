@@ -5,6 +5,7 @@ db_config = {
     "host": "localhost",
     "user": "root",
     "password": "q1w2e3r4",
+    "database": "israelmicrogreens",
 }
 
 # Create a new database
@@ -129,9 +130,6 @@ if __name__ == "__main__":
         create_orders_table(cursor)
 
         print("Database and tables created successfully!")
-
-        # Switch to the newly created database
-        use_database(cursor)
 
         # Adding Microgreens:
         add_microgreen("Broccoli", 25)
